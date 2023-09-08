@@ -534,8 +534,8 @@
                       (document.querySelector(".input_hex_text_color_preview").style.backgroundColor = "#ffffff"));
             });
             const i = [
-                    "../khadouj/img/1.png",
-                    "../khadouj/img/2.png",
+                    "./img/1.png",
+                    "./img/2.png",
                     "./img/3.png",
                     "./img/4.png",
                     "./img/5.png",
@@ -586,7 +586,7 @@
                 });
                 document.querySelector('.range-font').addEventListener('input', function () {
                     document.getElementById("post_title").style["font-size"] = this.value + "px";
-                  })
+                  }),
                 r("#input_post_label", "#post_label", "innerHTML"),
                 r("#input_post_title", "#post_title span", "innerHTML"),
                 r("#input_post_author", "#post_author", "innerHTML"),
