@@ -544,6 +544,12 @@
                     "./img/8.png",
                     "./img/9.png",
                     "./img/10.png",
+                    "./img/11.png",
+                    "./img/12.png",
+                    "./img/13.png",
+                    "./img/14.png",
+                    "./img/15.png",
+                    "./img/16.png",
                 ],
                 a = document.getElementById("input_background_image");
             for (let e = 0; e < i.length; e++) {
@@ -565,7 +571,22 @@
                     e.target.checked
                         ? ((document.querySelector(".background_image").style.filter = e.target.value), (document.querySelector(".background_image").style.opacity = "0.15"))
                         : ((document.querySelector(".background_image").style.filter = ""), (document.querySelector(".background_image").style.opacity = "0.25"));
-                }),
+                });
+                const M = document.getElementById("input_font_family");
+                M.addEventListener("change", (e) => {
+                    document.querySelector("html").style.fontFamily = e.target.value;
+
+                        console.log(e.target.value);
+                });
+                const Q = document.getElementById("input_title_style");
+                Q.addEventListener("change", (e) => {
+                    document.querySelector("#post_title span").className = "";
+                    document.querySelector("#post_title span").classList.add("card" + e.target.value);
+
+                });
+                document.querySelector('.range-font').addEventListener('input', function () {
+                    document.getElementById("post_title").style["font-size"] = this.value + "px";
+                  })
                 r("#input_post_label", "#post_label", "innerHTML"),
                 r("#input_post_title", "#post_title span", "innerHTML"),
                 r("#input_post_author", "#post_author", "innerHTML"),
