@@ -550,6 +550,14 @@
                     "./img/14.png",
                     "./img/15.png",
                     "./img/16.png",
+                    "./img/17.png",
+                    "./img/18.png",
+                    "./img/19.png",
+                    "./img/20.png",
+                    "./img/21.png",
+                    "./img/22.png",
+                    "./img/23.png",
+                    "./img/24.png",
                 ],
                 a = document.getElementById("input_background_image");
             for (let e = 0; e < i.length; e++) {
@@ -586,7 +594,7 @@
                 });
                 document.querySelector('.range-font').addEventListener('input', function () {
                     document.getElementById("post_title").style["font-size"] = this.value + "px";
-                  }),
+                  })
                 r("#input_post_label", "#post_label", "innerHTML"),
                 r("#input_post_title", "#post_title span", "innerHTML"),
                 r("#input_post_author", "#post_author", "innerHTML"),
